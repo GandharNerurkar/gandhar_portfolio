@@ -10,6 +10,8 @@ import { FaGithubSquare } from "react-icons/fa";
 import { useSectionInView } from "@/lib/hooks";
 import { useActiveSectionContext } from "@/context/active-section-context";
 import ProfileImg from "../assets/profile.jpg"
+import { Cover } from '../components/ui/Cover'
+
 
 export default function Intro() {
   const { ref } = useSectionInView("Home", 0.5);
@@ -67,7 +69,8 @@ export default function Intro() {
         <span className="font-bold">frontend developer</span> with{" "}
         <span className="font-bold">1.5 years</span> of experience. I enjoy
         building <span className="italic">sites & apps</span>. My focus is{" "}
-        <span className="underline">React (Next.js)</span>.
+        {/* <ContainerTextFlip className="underline" words={["React.js", "Next.js", "Typescript", "Node"]}></ContainerTextFlip> */}
+        <Cover>React.js, Next.js, TypeScript, Node </Cover>
       </motion.h1>
 
       <motion.div
